@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+</head>
+<body>
+    <header>
+    <h1>Registration Page</h1>
+    <p>Follow the steps below to complete your registration:</p>
+    <ul>
+      <li>Enter personal details</li>
+      <li>Select a plan</li>
+      <li>Submit the form</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Plans</h2>
+    <table border="1" cellpadding="5">
+      <tr><th>Plan</th><th>Price</th></tr>
+      <tr><td>Basic</td><td>$5</td></tr>
+      <tr><td>Premium</td><td>$15</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Intro Video</h2>
+    <video controls width="250">
+      <source src="C:\Users\Muhammad\Documents\Power Learn Project\Module 2 - Web Development\Week 1\mixkit-red-sports-car-74-hd-ready.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <main>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <label>First Name*: 
+        <input type="text" name="fname" placeholder="John" required>
+      </label><br><br>
+
+      <label>Phone Number*:
+        <input type="tel" name="phone" placeholder="+234 812 345 6789" required>
+      </label><br><br>
+
+      <label>Email*: 
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label><br><br>
+
+      <label>Password*: 
+        <input type="password" name="password" minlength="8" maxlength="20" required autocomplete="new-password">
+      </label><br><br>
+
+      <label>Confirm Password*: 
+        <input type="password" name="password" required autocomplete="new-password">
+      </label><br><br>
+
+      <label>Plan*: 
+        <select name="plan" required>
+          <option value="">--Select--</option>
+          <option>Basic</option>
+          <option>Premium</option>
+        </select>
+      </label><br><br>
+
+      <label>Referral Code: 
+        <input type="text" value="WELCOME2025" readonly>
+      </label><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form</p>
+  </footer>
+</body>
+</html>
